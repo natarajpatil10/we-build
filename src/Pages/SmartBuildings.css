@@ -1,0 +1,20 @@
+.sb-div img {
+	width: 100%;
+	height: auto;
+	margin: 2rem 0;
+	object-fit: cover;
+}
+.sb-container,
+.gb-container {
+	margin-bottom: 3rem;
+}
+
+@media screen and (max-width: 768px) {
+	.sb-container,
+	.gb-container {
+		margin-bottom: 1rem;
+	}
+	.sb-div img {
+		margin: 1rem 0;
+	}
+}

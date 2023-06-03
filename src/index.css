@@ -1,0 +1,97 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	text-decoration: none;
+	list-style: none;
+	color: rgb(50, 50, 50);
+}
+html {
+	scroll-behavior: smooth;
+}
+code {
+	font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New", monospace;
+}
+a {
+	cursor: pointer;
+}
+a:hover {
+	color: rgb(28, 126, 183);
+	transition: all 0.3s;
+}
+h1 {
+	font-size: 5vw;
+}
+.section {
+	background: #ccc;
+}
+.underline {
+	font-family: "Catamaran", sans-serif;
+	margin: 0 0 1.5rem 0;
+	display: inline-block;
+	position: relative;
+}
+/* .underline:after {
+	content: "";
+	position: absolute;
+	display: block;
+	height: 0.35em;
+	width: 110%;
+	margin-left: -52%;
+	left: 50%;
+	bottom: -0.35em;
+	border-radius: 50%;
+	z-index: -1;
+	background: rgb(28, 126, 183);
+} */
+.underline:before {
+	content: "";
+	position: absolute;
+	display: block;
+	height: 0.5em;
+	width: 100%;
+	margin-left: -55%;
+	left: 50%;
+	bottom: -0.22em;
+	border-radius: 50%;
+	z-index: -2;
+	background: white;
+	transform: translateY(0.25rem);
+	background: linear-gradient(to right, white 15%, rgb(28, 126, 183) 100%);
+}
+
+/*  CAROUSEL */
+
+.carousel {
+	width: 95%;
+	margin: 1rem auto 3rem auto;
+}
+
+.slick-prev,
+.slick-next {
+	/* ARROWS HIDDEN */
+	display: none !important;
+}
+/* .slick-prev:before,
+.slick-next:before {
+	font-size: 1.5rem !important;
+	color: black !important;
+} */
+
+@media screen and (max-width: 768px) {
+	h1 {
+		font-size: 6vw;
+	}
+	.carousel {
+		margin: 1.5rem auto;
+	}
+}
+@media screen and (max-width: 480px) {
+	h1 {
+		font-size: 7vw;
+		line-height: 2.2rem;
+	}
+	.carousel {
+		margin: 1.5rem auto;
+	}
+}

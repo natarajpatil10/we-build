@@ -1,0 +1,128 @@
+.video-container {
+	position: relative;
+}
+.video-container video {
+	width: 100%;
+	height: 100vh;
+	object-fit: cover;
+}
+.titleBox-container {
+	width: 50%;
+	position: absolute;
+	left: 25%;
+	top: 20%;
+	transform: translateX(-50%);
+	z-index: 1;
+}
+.titleBox {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	text-align: center;
+}
+.titleBox h1 {
+	letter-spacing: 1px;
+	font-size: 5vw;
+	font-family: sans-serif;
+	color: white;
+	text-shadow: -5px 1px rgb(255, 255, 255);
+}
+.cardS1 {
+	background-image: url("https://images.unsplash.com/photo-1520250497591-112f2f40a3f4?ixid=MnwxMjA3fDB8MHxzZWFyY2h8OHx8cmVzb3J0fGVufDB8fDB8fA%3D%3D&ixlib=rb-1.2.1&w=1000&q=80");
+	background-position: right;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+.cardS2 {
+	background-image: url("https://wallpaperaccess.com/full/418565.jpg");
+	background-position: right;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+.cardS3 {
+	background-image: url("https://wallpaperaccess.com/full/1209458.jpg");
+	background-position: right;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+.cardS4 {
+	background-image: url("https://images.unsplash.com/photo-1586250513881-b02b46c366eb?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTl8fGhvc3BpdGFsJTIwYnVpbGRpbmd8ZW58MHx8MHx8&ixlib=rb-1.2.1&w=1000&q=80");
+	background-position: right;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+.cardS5 {
+	background-image: url("https://i.pinimg.com/originals/2f/d3/48/2fd348b3a8ec6e63145413c575e026e9.jpg");
+	background-position: right;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+.cardS6 {
+	background-image: url("https://www.wallpapers4u.org/wp-content/uploads/city_street_lane_road_house_13763_1920x1080.jpg");
+	background-position: right;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+.text-box {
+	background-color: white;
+	position: absolute;
+	bottom: 66px;
+	right: 0;
+	width: 50%;
+	min-height: 15vh;
+	padding: 1rem;
+	box-shadow: 2px 5px 20px rgb(82, 82, 82);
+	border-radius: 10px;
+}
+.quote {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	padding: 2rem !important;
+	width: 73%;
+	margin: 5rem auto !important;
+}
+.quote q {
+	font-size: 2.2vw;
+}
+.quote cite {
+	margin: 0.5rem auto !important;
+	font-size: 2.2vw;
+	text-align: center;
+}
+
+@media screen and (max-width: 768px) {
+	.titleBox h1 {
+		font-size: 7vw;
+		text-shadow: none;
+	}
+	.text-box {
+		bottom: 66px;
+		width: 65%;
+	}
+	.quote {
+		width: 95%;
+		margin: 0 auto;
+		padding: 1.2rem !important;
+	}
+	.quote q,
+	.quote cite {
+		font-size: 3.2vw;
+	}
+}
+@media screen and (max-width: 480px) {
+	.titleBox h1 {
+		font-size: 8vw;
+	}
+	.quote q,
+	.quote cite {
+		width: 90%;
+		margin: 0 auto;
+		font-size: 4.5vw;
+	}
+	.text-box {
+		bottom: 66px;
+		width: 80%;
+	}
+}
